@@ -26,6 +26,10 @@ app.get(`/${config.admin_route}`, (req, res) => {
   res.render('login')
 })
 
+app.get(`/test`, (req, res) => {
+  res.render('admin')
+})
+
 app.get('/:page', (req, res) => {
   res.render('index', { page: req.params.page })
 })
