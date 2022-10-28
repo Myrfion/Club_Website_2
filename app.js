@@ -26,7 +26,7 @@ app.get(`/${config.admin_route}`, (req, res) => {
   res.render('login')
 })
 
-app.get(`/test`, (req, res) => {
+app.get('/test', (req, res) => {
   res.render('admin')
 })
 
